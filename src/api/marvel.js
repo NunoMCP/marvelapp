@@ -9,8 +9,6 @@ const timeStamp = Date.now()
 
 const md5hash = cryptoJS.MD5(timeStamp+privateKey+publicKey).toString()
 
-console.log(md5hash)
-
 export default axios.create({
     method: "GET",
     headers: {
