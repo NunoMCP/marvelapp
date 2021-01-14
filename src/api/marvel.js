@@ -14,7 +14,7 @@ export default axios.create({
     headers: {
         Accept: "*/*"
     },
-    baseURL: "http://gateway.marvel.com/v1/",
+    baseURL: "https://gateway.marvel.com/v1/",
     params: {
         "apikey": publicKey,
         "ts": timeStamp,
