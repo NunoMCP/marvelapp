@@ -48,7 +48,6 @@ constructor(props){
         this.setState({comicDescription: "No available comic description."})
       }
     this.setState({spinner: false})
-    console.log(response.data.data.results[0])
   }
 
   render(){
