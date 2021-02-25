@@ -40,8 +40,7 @@ constructor(props){
       comicDescription: response.data.data.results[0].description,
       comicSeries: response.data.data.results[0].series.name,
       comicPrice: response.data.data.results[0].prices[0].price,
-      firstLoad: false
-
+      firstLoad: false,
     })
   }
     if(this.state.comicDescription === null){
@@ -67,7 +66,7 @@ constructor(props){
     else if(this.state.noImage === true){
       return(
         <div>
-          <ErrorPage/>
+          <ErrorPage handlerClick={() => this.apiCall(Math.floor(Math.random()*25720))}/>
         </div>
       )
     }else{
